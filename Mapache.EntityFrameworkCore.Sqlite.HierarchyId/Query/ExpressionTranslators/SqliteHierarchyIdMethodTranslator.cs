@@ -61,7 +61,7 @@ namespace Microsoft.EntityFrameworkCore.Sqlite.Query.ExpressionTranslators
             if (typeof(HierarchyId).IsAssignableFrom(callingType)
                 && method.Name == "IsDescendantOf")
             {
-                var pattern = _sqlExpressionFactory.ApplyTypeMapping(arguments[0], new SqliteHierarchyIdTypeMapping("text", callingType, "y"));
+                var pattern = _sqlExpressionFactory.ApplyTypeMapping(arguments[0], new SqliteHierarchyIdTypeMapping("text", callingType, "IsDescendantOf"));
 
                 return _sqlExpressionFactory.Like(instance, pattern);
             }

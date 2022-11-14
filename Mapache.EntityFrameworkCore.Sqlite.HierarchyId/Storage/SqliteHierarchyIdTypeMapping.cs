@@ -112,7 +112,7 @@ namespace Microsoft.EntityFrameworkCore.Sqlite.Storage
             }
 
 
-            if (useType.Equals("IsDescendantOf"))
+            if (useType?.Equals("IsDescendantOf") ?? false)
             {
                 parameter.Value = string.Concat(parameter.Value?.ToString(), "%");
             }
