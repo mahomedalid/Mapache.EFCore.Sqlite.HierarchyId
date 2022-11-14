@@ -4,7 +4,20 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>Mapache.EntityFrameworkCore.Sqlite.HierarchyId</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore.Sqlite</RootNamespace>
+    <Description>Adds hierarchyid support to the SQLite EF Core provider</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="build\**\*">
+      <Pack>True</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
