@@ -1,0 +1,25 @@
+<Project>
+
+  <PropertyGroup>
+    <Authors>Maho Pacheco.</Authors>
+    <PackageProjectUrl>https://github.com/mahomedalid/Mapache.EFCore.Sqlite.HierarchyId</PackageProjectUrl>
+    <PackageTags>EntityFrameworkCore;SQLite;HierarchyId</PackageTags>
+    <Copyright>© 2022 Maho Pacheco. All rights reserved.</Copyright>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)key.snk</AssemblyOriginatorKeyFile>
+    <Version>0.0.1</Version>
+    <Features>strict</Features>
+    <LangVersion>latest</LangVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/mahomedalid/Mapache.EFCore.Sqlite.HierarchyId/releases</PackageReleaseNotes>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
