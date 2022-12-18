@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.31903.286
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapache.EntityFrameworkCore.Sqlite.HierarchyId", "Mapache.EntityFrameworkCore.Sqlite.HierarchyId\Mapache.EntityFrameworkCore.Sqlite.HierarchyId.csproj", "{704FBA23-6903-4BF4-B937-0E9BD5BA5FA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore.Sqlite.HierarchyId.Tests", "EFCore.Sqlite.HierarchyId.Tests\EFCore.Sqlite.HierarchyId.Tests.csproj", "{15A5DFC6-7B70-4724-814B-546D6774BBCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{704FBA23-6903-4BF4-B937-0E9BD5BA5FA1}.Release|x64.Build.0 = Release|Any CPU
 		{704FBA23-6903-4BF4-B937-0E9BD5BA5FA1}.Release|x86.ActiveCfg = Release|Any CPU
 		{704FBA23-6903-4BF4-B937-0E9BD5BA5FA1}.Release|x86.Build.0 = Release|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Debug|x64.Build.0 = Debug|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Debug|x86.Build.0 = Debug|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Release|x64.ActiveCfg = Release|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Release|x64.Build.0 = Release|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Release|x86.ActiveCfg = Release|Any CPU
+		{15A5DFC6-7B70-4724-814B-546D6774BBCA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

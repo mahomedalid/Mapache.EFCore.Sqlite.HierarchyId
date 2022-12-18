@@ -25,13 +25,11 @@ namespace Microsoft.EntityFrameworkCore.Sqlite.Infrastructure
             var internalServiceProvider = options.FindExtension<CoreOptionsExtension>()?.InternalServiceProvider;
             if (internalServiceProvider != null)
             {
-                using (var scope = internalServiceProvider.CreateScope())
+                using var scope = internalServiceProvider.CreateScope();
+                if (scope.ServiceProvider.GetService<IEnumerable<ITypeMappingSourcePlugin>>()
+                       ?.Any(s => s is SqliteHierarchyIdTypeMappingSourcePlugin) != true)
                 {
-                    if (scope.ServiceProvider.GetService<IEnumerable<ITypeMappingSourcePlugin>>()
-                           ?.Any(s => s is SqliteHierarchyIdTypeMappingSourcePlugin) != true)
-                    {
-                        throw new InvalidOperationException();
-                    }
+                    throw new InvalidOperationException();
                 }
             }
         }
